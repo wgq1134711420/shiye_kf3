@@ -1,0 +1,114 @@
+2020-08-31 at 17:51:40 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:51:40 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:51:41 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:51:43 | ERROR | 处理报错消息内容:{'end_time': '1598608760', 'start_time': '1598608735', 'spider_name': 'caijing_hexun_gsyw', 'collection_name': 'sy_news_finance_hexun_raw'}  消息处理总量:39条
+2020-08-31 at 17:51:44 | ERROR | 处理报错消息内容:{'start_time': '1598608688', 'spider_name': 'caijing_eastmoney_ccjxw', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1598608733'}  消息处理总量:72条
+2020-08-31 at 17:51:44 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_sina_ssgs', 'end_time': '1598608767', 'start_time': '1598608765', 'collection_name': 'sy_news_finance_sina_raw'}  消息处理总量:4条
+2020-08-31 at 17:51:59 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:00 | ERROR | 处理报错消息内容:{'end_time': '1598608760', 'start_time': '1598608735', 'collection_name': 'sy_news_finance_hexun_raw', 'spider_name': 'caijing_hexun_gsyw'}  消息处理总量:39条
+2020-08-31 at 17:52:01 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:02 | ERROR | 处理报错消息内容:{'end_time': '1598608767', 'spider_name': 'caijing_sina_ssgs', 'start_time': '1598608765', 'collection_name': 'sy_news_finance_sina_raw'}  消息处理总量:4条
+2020-08-31 at 17:52:02 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:03 | ERROR | 处理报错消息内容:{'start_time': '1598608688', 'spider_name': 'caijing_eastmoney_ccjxw', 'end_time': '1598608733', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:72条
+2020-08-31 at 17:52:13 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:14 | ERROR | 处理报错消息内容:{'start_time': '1598608735', 'spider_name': 'caijing_hexun_gsyw', 'collection_name': 'sy_news_finance_hexun_raw', 'end_time': '1598608760'}  消息处理总量:39条
+2020-08-31 at 17:52:15 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:16 | ERROR | 处理报错消息内容:{'end_time': '1598608767', 'spider_name': 'caijing_sina_ssgs', 'start_time': '1598608765', 'collection_name': 'sy_news_finance_sina_raw'}  消息处理总量:4条
+2020-08-31 at 17:52:17 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:18 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_eastmoney_ccjxw', 'end_time': '1598608733', 'start_time': '1598608688', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:72条
+2020-08-31 at 17:52:27 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:28 | ERROR | 处理报错消息内容:{'start_time': '1598608735', 'spider_name': 'caijing_hexun_gsyw', 'end_time': '1598608760', 'collection_name': 'sy_news_finance_hexun_raw'}  消息处理总量:39条
+2020-08-31 at 17:52:29 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:30 | ERROR | 处理报错消息内容:{'start_time': '1598608765', 'end_time': '1598608767', 'spider_name': 'caijing_sina_ssgs', 'collection_name': 'sy_news_finance_sina_raw'}  消息处理总量:4条
+2020-08-31 at 17:52:31 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:31 | ERROR | 处理报错消息内容:{'end_time': '1598608733', 'collection_name': 'sy_news_finance_eastmoney_raw', 'start_time': '1598608688', 'spider_name': 'caijing_eastmoney_ccjxw'}  消息处理总量:72条
+2020-08-31 at 17:52:38 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:39 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_hexun_gsyw', 'end_time': '1598608760', 'collection_name': 'sy_news_finance_hexun_raw', 'start_time': '1598608735'}  消息处理总量:39条
+2020-08-31 at 17:52:42 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:43 | ERROR | 处理报错消息内容:{'end_time': '1598608733', 'spider_name': 'caijing_eastmoney_ccjxw', 'start_time': '1598608688', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:72条
+2020-08-31 at 17:52:44 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:44 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_sina_raw', 'spider_name': 'caijing_sina_ssgs', 'end_time': '1598608767', 'start_time': '1598608765'}  消息处理总量:4条
+2020-08-31 at 17:52:49 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:50 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_hexun_gsyw', 'start_time': '1598608735', 'collection_name': 'sy_news_finance_hexun_raw', 'end_time': '1598608760'}  消息处理总量:39条
+2020-08-31 at 17:52:56 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:58 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:58 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 831, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctime,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() got an unexpected keyword argument 'yqid'
+
+2020-08-31 at 17:52:58 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_sina_ssgs', 'start_time': '1598608765', 'end_time': '1598608767', 'collection_name': 'sy_news_finance_sina_raw'}  消息处理总量:4条
+2020-08-31 at 17:52:59 | ERROR | 处理报错消息内容:{'start_time': '1598608735', 'collection_name': 'sy_news_finance_hexun_raw', 'end_time': '1598608760', 'spider_name': 'caijing_hexun_gsyw'}  消息处理总量:39条
+2020-08-31 at 17:53:00 | ERROR | 处理报错消息内容:{'end_time': '1598608733', 'spider_name': 'caijing_eastmoney_ccjxw', 'start_time': '1598608688', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:72条

@@ -1,0 +1,257 @@
+2020-06-22 at 02:10:17 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:18 | ERROR | 处理报错消息内容:{'end_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_cgnjj', 'start_time': '1592762786'}  消息处理总量:0条
+2020-06-22 at 02:10:20 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:21 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_eastmoney_cgnjj', 'start_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1592762786'}  消息处理总量:0条
+2020-06-22 at 02:10:22 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:23 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1592762786', 'start_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:10:25 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:25 | ERROR | 处理报错消息内容:{'start_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:10:27 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:27 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_eastmoney_cgnjj', 'end_time': '1592762786', 'start_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:0条
+2020-06-22 at 02:10:30 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:30 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1592762786', 'start_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:10:33 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:34 | ERROR | 处理报错消息内容:{'start_time': '1592762786', 'end_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:10:35 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:36 | ERROR | 处理报错消息内容:{'start_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:10:38 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:39 | ERROR | 处理报错消息内容:{'start_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_cgnjj', 'end_time': '1592762786'}  消息处理总量:0条
+2020-06-22 at 02:10:41 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:42 | ERROR | 处理报错消息内容:{'end_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj', 'start_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:0条
+2020-06-22 at 02:10:46 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:10:47 | ERROR | 处理报错消息内容:{'end_time': '1592762786', 'start_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:0条
+2020-06-22 at 02:11:01 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_ccjxw', 'end_time': '1592763053', 'start_time': '1592763046'}  消息处理总量:6条
+2020-06-22 at 02:11:03 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:11:04 | ERROR | 处理报错消息内容:{'start_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj', 'end_time': '1592762786', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:0条
+2020-06-22 at 02:11:13 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:11:13 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1592762786', 'start_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:11:20 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:11:21 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'start_time': '1592762786', 'end_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj'}  消息处理总量:0条
+2020-06-22 at 02:11:27 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:11:27 | ERROR | 处理报错消息内容:{'end_time': '1592762786', 'start_time': '1592762786', 'spider_name': 'caijing_eastmoney_cgnjj', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:0条
+2020-06-22 at 02:11:34 | ERROR | Traceback (most recent call last):
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 282, in thread_process_data
+    self.save_sql(sql_actions)   # [Mysql]
+  File "/database/chentong/remote_host/shiye_financial_news/bin/process_data.py", line 118, in save_sql
+    df_data_sql = df_data_sql.drop('company', axis=1).join(
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/frame.py", line 3940, in drop
+    errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3780, in drop
+    obj = obj._drop_axis(labels, axis, level=level, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/generic.py", line 3812, in _drop_axis
+    new_axis = axis.drop(labels, errors=errors)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/core/indexes/base.py", line 4965, in drop
+    '{} not found in axis'.format(labels[mask]))
+KeyError: "['company'] not found in axis"
+
+2020-06-22 at 02:11:34 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_cgnjj', 'end_time': '1592762786', 'start_time': '1592762786'}  消息处理总量:0条

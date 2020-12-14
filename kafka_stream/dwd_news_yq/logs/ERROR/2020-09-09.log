@@ -1,0 +1,179 @@
+2020-09-09 at 09:48:40 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 09:51:51 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1426, in relation_path_add
+    relation_result_list = r.json()['data']
+  File "/usr/local/lib/python3.5/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2020-09-09 at 09:51:57 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastday_raw', 'end_time': '1599027097', 'start_time': '1599027097', 'spider_name': 'caijing_eastday_caijing'}  消息处理总量:1条
+2020-09-09 at 10:05:27 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 10:09:22 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1451, in relation_path_add
+    insert_news_search(db=db1,yqid=uid,objName=company,companyShortName=relativity_companyShortName,companyCode=relativity_companyCode,indirectObjName=relativity_company,transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=content,isValid=1,dataStatus=1)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 575, in insert_news_search
+    dataStatus
+  File "/usr/local/lib/python3.5/dist-packages/DBUtils/SteadyDB.py", line 605, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'bc02f1b4e460303cafa5f85d1f8c8236-中国物流与采购联合会-' for key 'yqid+companyName+eventCode+indirectObjName'")
+
+2020-09-09 at 10:09:22 | ERROR | 处理报错消息内容:{'start_time': '1599027148', 'spider_name': 'caijing_eastmoney_ccjxw', 'end_time': '1599027156', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:11条
+2020-09-09 at 10:18:03 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 10:22:22 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1428, in relation_path_add
+    redis_conn().hset('relation_company_path', company, ';'.join(relation_result_list))
+UnboundLocalError: local variable 'company' referenced before assignment
+
+2020-09-09 at 10:22:22 | ERROR | 处理报错消息内容:{'end_time': '1599027384', 'collection_name': 'sy_news_finance_mysteel_raw', 'spider_name': 'caijing_mysteel_zonghe_all', 'start_time': '1599027354'}  消息处理总量:5条
+2020-09-09 at 10:23:35 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1429, in relation_path_add
+    redis_conn().hset('relation_company_path', relativity_company, ';'.join(relation_result_list))
+TypeError: sequence item 0: expected str instance, list found
+
+2020-09-09 at 10:23:39 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_mysteel_zonghe_all', 'start_time': '1599027354', 'collection_name': 'sy_news_finance_mysteel_raw', 'end_time': '1599027384'}  消息处理总量:5条
+2020-09-09 at 10:25:00 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1429, in relation_path_add
+    redis_conn().hset('relation_company_path', relativity_company, ';'.join(','.join(relation_result_list)))
+TypeError: sequence item 0: expected str instance, list found
+
+2020-09-09 at 10:25:01 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_mysteel_zonghe_all', 'end_time': '1599027384', 'collection_name': 'sy_news_finance_mysteel_raw', 'start_time': '1599027354'}  消息处理总量:5条
+2020-09-09 at 10:25:29 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1430, in relation_path_add
+    redis_conn().hset('relation_company_path', relativity_company, ';'.join(','.join(relation_result_list)))
+TypeError: sequence item 0: expected str instance, list found
+
+2020-09-09 at 10:25:30 | ERROR | 处理报错消息内容:{'start_time': '1599027354', 'collection_name': 'sy_news_finance_mysteel_raw', 'end_time': '1599027384', 'spider_name': 'caijing_mysteel_zonghe_all'}  消息处理总量:5条
+2020-09-09 at 10:30:26 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1428, in relation_path_add
+    print('relation_result_list',relation_result_list,','.join(';'.join(relation_result_list)))
+TypeError: sequence item 0: expected str instance, list found
+
+2020-09-09 at 10:30:27 | ERROR | 处理报错消息内容:{'end_time': '1599027384', 'spider_name': 'caijing_mysteel_zonghe_all', 'collection_name': 'sy_news_finance_mysteel_raw', 'start_time': '1599027354'}  消息处理总量:5条
+2020-09-09 at 10:34:13 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1428, in relation_path_add
+    print('relation_result_list',relation_result_list,';'.join(relation_result_list))
+TypeError: sequence item 0: expected str instance, list found
+
+2020-09-09 at 10:34:14 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_mysteel_zonghe_all', 'collection_name': 'sy_news_finance_mysteel_raw', 'end_time': '1599027384', 'start_time': '1599027354'}  消息处理总量:5条
+2020-09-09 at 10:43:02 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1429, in relation_path_add
+    print(';'.join(relation_result_list))
+TypeError: sequence item 0: expected str instance, list found
+
+2020-09-09 at 10:43:03 | ERROR | 处理报错消息内容:{'start_time': '1599027354', 'spider_name': 'caijing_mysteel_zonghe_all', 'end_time': '1599027384', 'collection_name': 'sy_news_finance_mysteel_raw'}  消息处理总量:5条
+2020-09-09 at 10:51:44 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1431, in relation_path_add
+    relation_result_str += ','.join(relation_result) + ';'
+TypeError: sequence item 2: expected str instance, float found
+
+2020-09-09 at 10:51:45 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_mysteel_zonghe_all', 'end_time': '1599027384', 'start_time': '1599027354', 'collection_name': 'sy_news_finance_mysteel_raw'}  消息处理总量:5条
+2020-09-09 at 10:53:01 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1431, in relation_path_add
+    print(','.join(relation_result))
+TypeError: sequence item 2: expected str instance, float found
+
+2020-09-09 at 10:53:02 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_mysteel_raw', 'start_time': '1599027354', 'end_time': '1599027384', 'spider_name': 'caijing_mysteel_zonghe_all'}  消息处理总量:5条
+2020-09-09 at 10:53:57 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 10:57:37 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 11:00:27 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 11:01:41 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 11:03:41 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-09 at 11:15:05 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+

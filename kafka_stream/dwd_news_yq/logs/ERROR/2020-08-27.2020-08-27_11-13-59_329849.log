@@ -1,0 +1,569 @@
+2020-08-27 at 11:13:59 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 357, in thread_process_data
+    lvl_list = lvl_title(title)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 912, in lvl_title
+    db1 = pymysql.connect(**{"host":"192.168.1.129","user":"aliyun_rw","password":"shiye_aliyun","db":"sy_yq_raw","port":3306,"charset":"utf8"})
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+2020-08-27 at 11:13:59 | ERROR | 处理报错消息内容:{'start_time': '1598498083', 'end_time': '1598498083', 'spider_name': 'hangye_autohome_news', 'collection_name': 'sy_news_hangye_autohome_raw'}  消息处理总量:1条
+2020-08-27 at 11:14:20 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 357, in thread_process_data
+    lvl_list = lvl_title(title)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 912, in lvl_title
+    db1 = pymysql.connect(**{"host":"192.168.1.129","user":"aliyun_rw","password":"shiye_aliyun","db":"sy_yq_raw","port":3306,"charset":"utf8"})
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+2020-08-27 at 11:14:20 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_smm_raw', 'end_time': '1598498044', 'start_time': '1598498044', 'spider_name': 'caijing_smm_yaowen'}  消息处理总量:1条
+2020-08-27 at 11:14:22 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 357, in thread_process_data
+    lvl_list = lvl_title(title)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 912, in lvl_title
+    db1 = pymysql.connect(**{"host":"192.168.1.129","user":"aliyun_rw","password":"shiye_aliyun","db":"sy_yq_raw","port":3306,"charset":"utf8"})
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+2020-08-27 at 11:14:23 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_smm_raw', 'start_time': '1598498044', 'spider_name': 'caijing_smm_yaowen', 'end_time': '1598498044'}  消息处理总量:1条
+2020-08-27 at 11:19:43 | ERROR | Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/database/dwd_news_yq/utils.py", line 104, in con_mysql
+    cursor = conn.execute(sql)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2165, in execute
+    connection = self._contextual_connect(close_with_result=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+
+2020-08-27 at 11:19:43 | ERROR | Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 268, in thread_process_data
+    data_df = self.redis_cache()
+  File "/database/dwd_news_yq/bin/process_data.py", line 189, in redis_cache
+    now_df = pd.read_sql(company_sql, con=url)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/sql.py", line 397, in read_sql
+    chunksize=chunksize)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/sql.py", line 1099, in read_query
+    result = self.execute(*args)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/sql.py", line 990, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2165, in execute
+    connection = self._contextual_connect(close_with_result=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+
+2020-08-27 at 11:19:44 | ERROR | 处理报错消息内容:{'end_time': '1598498392', 'start_time': '1598498386', 'spider_name': 'caijing_eastday_caijing', 'collection_name': 'sy_news_finance_eastday_raw'}  消息处理总量:3条
+2020-08-27 at 11:19:50 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 357, in thread_process_data
+    lvl_list = lvl_title(title)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 912, in lvl_title
+    db1 = pymysql.connect(**{"host":"192.168.1.129","user":"aliyun_rw","password":"shiye_aliyun","db":"sy_yq_raw","port":3306,"charset":"utf8"})
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+2020-08-27 at 11:19:50 | ERROR | 处理报错消息内容:{'start_time': '1598498386', 'end_time': '1598498392', 'collection_name': 'sy_news_finance_eastday_raw', 'spider_name': 'caijing_eastday_caijing'}  消息处理总量:3条
+2020-08-27 at 11:20:02 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 357, in thread_process_data
+    lvl_list = lvl_title(title)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 912, in lvl_title
+    db1 = pymysql.connect(**{"host":"192.168.1.129","user":"aliyun_rw","password":"shiye_aliyun","db":"sy_yq_raw","port":3306,"charset":"utf8"})
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+2020-08-27 at 11:20:02 | ERROR | 处理报错消息内容:{'end_time': '1598498392', 'collection_name': 'sy_news_finance_eastday_raw', 'start_time': '1598498386', 'spider_name': 'caijing_eastday_caijing'}  消息处理总量:3条
+2020-08-27 at 11:20:07 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 357, in thread_process_data
+    lvl_list = lvl_title(title)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 912, in lvl_title
+    db1 = pymysql.connect(**{"host":"192.168.1.129","user":"aliyun_rw","password":"shiye_aliyun","db":"sy_yq_raw","port":3306,"charset":"utf8"})
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+2020-08-27 at 11:20:07 | ERROR | 处理报错消息内容:{'end_time': '1598498392', 'collection_name': 'sy_news_finance_eastday_raw', 'start_time': '1598498386', 'spider_name': 'caijing_eastday_caijing'}  消息处理总量:3条
+2020-08-27 at 11:20:22 | ERROR | Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/database/dwd_news_yq/utils.py", line 104, in con_mysql
+    cursor = conn.execute(sql)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2165, in execute
+    connection = self._contextual_connect(close_with_result=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+
+2020-08-27 at 11:20:22 | ERROR | Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.OperationalError: (1040, 'Too many connections')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 268, in thread_process_data
+    data_df = self.redis_cache()
+  File "/database/dwd_news_yq/bin/process_data.py", line 189, in redis_cache
+    now_df = pd.read_sql(company_sql, con=url)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/sql.py", line 397, in read_sql
+    chunksize=chunksize)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/sql.py", line 1099, in read_query
+    result = self.execute(*args)
+  File "/usr/local/lib/python3.5/dist-packages/pandas/io/sql.py", line 990, in execute
+    return self.connectable.execute(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2165, in execute
+    connection = self._contextual_connect(close_with_result=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 492, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 139, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/impl.py", line 136, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 308, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 437, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 598, in connect
+    self._get_server_information()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 975, in _get_server_information
+    packet = self._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (1040, 'Too many connections')
+(Background on this error at: http://sqlalche.me/e/e3q8)
+
+2020-08-27 at 11:20:22 | ERROR | 处理报错消息内容:{'end_time': '1598498392', 'start_time': '1598498386', 'spider_name': 'caijing_eastday_caijing', 'collection_name': 'sy_news_finance_eastday_raw'}  消息处理总量:3条
+2020-08-27 at 11:24:35 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 977, in process_data
+    globalLog.warning("处理超时消息内容:{}  消息处理总量:{}条".format(self.msg, self.mongo_count))
+AttributeError: 'Processing' object has no attribute 'mongo_count'
+

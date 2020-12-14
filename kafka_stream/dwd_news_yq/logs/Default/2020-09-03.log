@@ -1,0 +1,60 @@
+2020-09-03 at 11:00:19 | SUCCESS | 消息内容:{'end_time': '1599026626', 'collection_name': 'sy_news_finance_jrj_raw', 'spider_name': 'caijing_jrj_xsb', 'start_time': '1599026626'}  消息处理总量:0条
+2020-09-03 at 11:00:27 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 954, in thread_process_data
+  File "/database/dwd_news_yq/bin/process_helper.py", line 554, in insert_news_search
+    dataStatus
+  File "/usr/local/lib/python3.5/dist-packages/DBUtils/SteadyDB.py", line 605, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4fab970143e6362f8e169406238f5f83-北京小桔科技有限公司-' for key 'yqid+companyName+eventCode'")
+
+2020-09-03 at 11:00:27 | ERROR | 处理报错消息内容:{'end_time': '1599026613', 'collection_name': 'sy_news_finance_chinaventure_raw', 'spider_name': 'caijing_chinaventure_sysd', 'start_time': '1599026613'}  消息处理总量:1条
+2020-09-03 at 11:04:28 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 956, in thread_process_data
+    insert_news_search(db=db1,yqid=uid,objName=company,companyShortName=relativity_companyShortName.replace('(','（').replace(')','）'),companyCode=relativity_companyCode,indirectObjName=relativity_company.replace('(','（').replace(')','）'),transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content,isValid=1,dataStatus=1)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 554, in insert_news_search
+    dataStatus
+  File "/usr/local/lib/python3.5/dist-packages/DBUtils/SteadyDB.py", line 605, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry '4fab970143e6362f8e169406238f5f83-北京小桔科技有限公司-' for key 'yqid+companyName+eventCode'")
+
+2020-09-03 at 11:04:29 | ERROR | 处理报错消息内容:{'end_time': '1599026613', 'start_time': '1599026613', 'collection_name': 'sy_news_finance_chinaventure_raw', 'spider_name': 'caijing_chinaventure_sysd'}  消息处理总量:1条
+2020-09-03 at 11:09:17 | SUCCESS | 消息内容:{'spider_name': 'caijing_chinaventure_sysd', 'end_time': '1599026613', 'collection_name': 'sy_news_finance_chinaventure_raw', 'start_time': '1599026613'}  消息处理总量:1条
+2020-09-03 at 11:09:27 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1000, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+

@@ -1,0 +1,17 @@
+2020-08-23 at 10:40:24 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/mq/mq.py", line 193, in listening
+    self.channel.start_consuming()
+  File "/usr/local/lib/python3.5/dist-packages/pika/adapters/blocking_connection.py", line 1866, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/usr/local/lib/python3.5/dist-packages/pika/adapters/blocking_connection.py", line 2027, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/usr/local/lib/python3.5/dist-packages/pika/adapters/blocking_connection.py", line 825, in process_data_events
+    self._flush_output(common_terminator)
+  File "/usr/local/lib/python3.5/dist-packages/pika/adapters/blocking_connection.py", line 513, in _flush_output
+    self._impl.ioloop.poll()
+  File "/usr/local/lib/python3.5/dist-packages/pika/adapters/select_connection.py", line 576, in poll
+    self._poller.poll()
+  File "/usr/local/lib/python3.5/dist-packages/pika/adapters/select_connection.py", line 1181, in poll
+    events = self._poll.poll(self._get_max_wait())
+KeyboardInterrupt
+

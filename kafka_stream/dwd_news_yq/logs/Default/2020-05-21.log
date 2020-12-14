@@ -1,0 +1,24 @@
+2020-05-21 at 11:58:37 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:38 | ERROR | 处理报错消息内容:{'start_time': '1590033463', 'end_time': '1590033463', 'spider_name': 'caijing_southcn_cjtt', 'collection_name': 'sy_news_finance_southcn_raw'}  消息处理总量:1条
+2020-05-21 at 11:58:38 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:38 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:39 | ERROR | 处理报错消息内容:{'start_time': '1590033463', 'collection_name': 'sy_news_finance_southcn_raw', 'end_time': '1590033463', 'spider_name': 'caijing_southcn_cjtt'}  消息处理总量:1条
+2020-05-21 at 11:58:39 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_southcn_cjtt', 'end_time': '1590033463', 'collection_name': 'sy_news_finance_southcn_raw', 'start_time': '1590033463'}  消息处理总量:1条
+2020-05-21 at 11:58:41 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:42 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_southcn_raw', 'end_time': '1590033463', 'start_time': '1590033463', 'spider_name': 'caijing_southcn_cjtt'}  消息处理总量:1条
+2020-05-21 at 11:58:42 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:43 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:43 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_thecapital_zixun', 'collection_name': 'sy_news_finance_thecapital_raw', 'start_time': '1590033444', 'end_time': '1590033444'}  消息处理总量:1条
+2020-05-21 at 11:58:43 | ERROR | 处理报错消息内容:{'end_time': '1590033463', 'start_time': '1590033463', 'spider_name': 'caijing_southcn_cjtt', 'collection_name': 'sy_news_finance_southcn_raw'}  消息处理总量:1条
+2020-05-21 at 11:58:46 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:47 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_southcn_raw', 'spider_name': 'caijing_southcn_cjtt', 'start_time': '1590033463', 'end_time': '1590033463'}  消息处理总量:1条
+2020-05-21 at 11:58:47 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:47 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:48 | ERROR | 处理报错消息内容:{'end_time': '1590033444', 'start_time': '1590033444', 'collection_name': 'sy_news_finance_thecapital_raw', 'spider_name': 'caijing_thecapital_zixun'}  消息处理总量:1条
+2020-05-21 at 11:58:48 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_thecapital_raw', 'spider_name': 'caijing_thecapital_zixun', 'end_time': '1590033444', 'start_time': '1590033444'}  消息处理总量:1条
+2020-05-21 at 11:58:52 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:53 | ERROR | 处理报错消息内容:{'start_time': '1590033463', 'end_time': '1590033463', 'collection_name': 'sy_news_finance_southcn_raw', 'spider_name': 'caijing_southcn_cjtt'}  消息处理总量:1条
+2020-05-21 at 11:58:53 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:54 | ERROR | 处理报错消息内容:{'end_time': '1590033444', 'collection_name': 'sy_news_finance_thecapital_raw', 'start_time': '1590033444', 'spider_name': 'caijing_thecapital_zixun'}  消息处理总量:1条
+2020-05-21 at 11:58:54 | ERROR | 算法模型服务端口未开启
+2020-05-21 at 11:58:55 | ERROR | 处理报错消息内容:{'start_time': '1590033468', 'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_ccjxw', 'end_time': '1590033478'}  消息处理总量:16条

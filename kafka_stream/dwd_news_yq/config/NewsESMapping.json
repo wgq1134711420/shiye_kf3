@@ -1,0 +1,63 @@
+{
+  "settings": {
+    "index": {
+      "mapping": {
+        "total_fields": {
+          "limit": "10000000"
+        }
+      },
+      "number_of_shards": "6",
+      "number_of_replicas": 0,
+      "refresh_interval": "30s",
+      "translog": {
+        "flush_threshold_size": "3gb",
+        "sync_interval": "100s",
+        "durability": "async"
+      }
+    },
+    "analysis": {
+      "analyzer": {
+        "my_analyzer": {
+          "tokenizer": "my_tokenizer"
+        }
+      },
+      "tokenizer": {
+        "my_tokenizer": {
+          "type": "ngram",
+          "min_gram": 2,
+          "max_gram": 2,
+          "token_chars": [
+            "letter",
+            "digit"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "financial_industry_news_type": {
+      "properties": {
+        "company": {
+          "type": "text",
+          "analyzer": "my_analyzer",
+          "fields": {
+            "keyword": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        },
+        "title": {
+          "type": "text",
+          "analyzer": "my_analyzer",
+          "fields": {
+            "keyword": {
+              "ignore_above": 256,
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  }
+}

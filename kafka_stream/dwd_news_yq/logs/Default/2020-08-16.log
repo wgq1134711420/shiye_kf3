@@ -1,0 +1,9 @@
+2020-08-16 at 22:01:28 | SUCCESS | 消息内容:{'spider_name': 'caijing_cnstock_stock_all', 'start_time': '1597376002', 'end_time': '1597376002', 'collection_name': 'sy_news_finance_cnstock_raw'}  消息处理总量:1条
+2020-08-16 at 22:01:33 | SUCCESS | 消息内容:{'spider_name': 'caijing_ocn_shichang', 'start_time': '1597376037', 'end_time': '1597376037', 'collection_name': 'sy_news_finance_ocn_raw'}  消息处理总量:1条
+2020-08-16 at 22:01:38 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_eccn_raw', 'start_time': '1597376039', 'spider_name': 'caijing_eccn_zxzx', 'end_time': '1597376039'}  消息处理总量:2条
+2020-08-16 at 22:01:40 | SUCCESS | 消息内容:{'spider_name': 'caijing_winshang_yaowen_all', 'collection_name': 'sy_news_finance_winshang_raw', 'end_time': '1597375971', 'start_time': '1597375971'}  消息处理总量:1条
+2020-08-16 at 22:01:42 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_qq_raw', 'start_time': '1597376062', 'spider_name': 'caijing_qq_chanye', 'end_time': '1597376062'}  消息处理总量:1条
+2020-08-16 at 22:01:43 | SUCCESS | 消息内容:{'spider_name': 'caijing_cnstock_cyjj', 'end_time': '1597375959', 'collection_name': 'sy_news_finance_cnstock_raw', 'start_time': '1597375952'}  消息处理总量:10条
+2020-08-16 at 22:01:45 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_yuncaijing_raw', 'start_time': '1597376046', 'spider_name': 'caijing_yuncaijing_neican', 'end_time': '1597376048'}  消息处理总量:3条
+2020-08-16 at 22:01:50 | SUCCESS | 消息内容:{'spider_name': 'hangye_csia_iccad_news', 'end_time': '1597376104', 'collection_name': 'sy_news_hangye_csia_iccad_raw', 'start_time': '1597376103'}  消息处理总量:2条
+2020-08-16 at 22:01:55 | SUCCESS | 消息内容:{'spider_name': 'caijing_askci_gcy', 'end_time': '1597376081', 'collection_name': 'sy_news_finance_askci_raw', 'start_time': '1597376076'}  消息处理总量:2条

@@ -1,0 +1,28 @@
+2020-08-28 at 14:50:39 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 255, in thread_process_data
+    data = self.get_mongo()
+  File "/database/dwd_news_yq/bin/process_data.py", line 104, in get_mongo
+    self.mongo_count = mongo.count()
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/cursor.py", line 769, in count
+    cmd, self.__collation, session=self.__session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 1563, in _count
+    with self._socket_for_reads(session) as (sock_info, slave_ok):
+  File "/usr/lib/python3.5/contextlib.py", line 59, in __enter__
+    return next(self.gen)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1099, in _socket_for_reads
+    server = topology.select_server(read_preference)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 224, in select_server
+    address))
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 183, in select_servers
+    selector, server_timeout, address)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/topology.py", line 199, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.1.125:10011: [Errno 113] No route to host
+
+2020-08-28 at 14:50:40 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 970, in process_data
+    globalLog.error("处理报错消息内容:{}  消息处理总量:{}条".format(self.msg, self.mongo_count))
+AttributeError: 'Processing' object has no attribute 'mongo_count'
+

@@ -1,0 +1,23 @@
+新闻资讯类
+字段名	字段类型	字段解释	备注	举例
+collection_name	str	集合名
+url	str	链接
+uid	str	去重id
+title	str	标题
+contents	list	数据处理的内容
+web_contents	list	前端使用的内容
+article_info	dict	文章的相关信息
+label	dict	图片、表格
+accessory	list	附件
+ctime	int	发布时间
+gtime	int	爬虫时间
+breadcrumb	list	导航
+channel	str	频道
+spider_name	str	爬虫名
+webname	str	网站名
+domain	str	域名
+path	str	附件路径
+source	str	来源
+main_business	str	相关行业
+company	str	相关公司
+content_xml	str	文本源码

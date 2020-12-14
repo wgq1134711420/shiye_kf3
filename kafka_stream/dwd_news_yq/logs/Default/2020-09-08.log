@@ -1,0 +1,391 @@
+2020-09-08 at 14:04:32 | SUCCESS | 消息内容:{'end_time': '1599026601', 'start_time': '1599026539', 'collection_name': 'sy_news_finance_nbse_raw', 'spider_name': 'caijing_nbse_hyxx_all'}  消息处理总量:3条
+2020-09-08 at 14:04:34 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1009, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-08 at 14:12:02 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 370, in thread_process_data
+    lvl_list = lvl_title_content(title,content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1278, in lvl_title_content
+    filter_list.append(list(co_names[i])[cn1.index('filterRules')].split('、'))
+AttributeError: 'NoneType' object has no attribute 'split'
+
+2020-09-08 at 14:12:02 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastday_raw', 'spider_name': 'caijing_eastday_caijing', 'start_time': '1599026605', 'end_time': '1599026610'}  消息处理总量:2条
+2020-09-08 at 14:16:28 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 851, in thread_process_data
+    insert_statistics(db=db1,yqid=uid,company=company,ctimeDate=ctimeDate,relType='直接关联',emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName)
+TypeError: insert_statistics() missing 2 required positional arguments: 'eventCode' and 'eventName'
+
+2020-09-08 at 14:16:29 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastday_raw', 'spider_name': 'caijing_eastday_caijing', 'start_time': '1599026605', 'end_time': '1599026610'}  消息处理总量:2条
+2020-09-08 at 14:23:39 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1398, in relation_path_add
+    relation_result_list = r.json()['data']
+  File "/usr/local/lib/python3.5/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2020-09-08 at 14:23:40 | ERROR | 处理报错消息内容:{'end_time': '1599026610', 'spider_name': 'caijing_eastday_caijing', 'start_time': '1599026605', 'collection_name': 'sy_news_finance_eastday_raw'}  消息处理总量:2条
+2020-09-08 at 14:27:57 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1421, in relation_path_add
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=relativity_companyShortName,companyCode=relativity_companyCode,indirectObjName=relativity_company,transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1386, in insert_mongo
+    'isValid' : NumberInt(1),
+NameError: name 'NumberInt' is not defined
+
+2020-09-08 at 14:27:58 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_eastday_caijing', 'start_time': '1599026605', 'end_time': '1599026610', 'collection_name': 'sy_news_finance_eastday_raw'}  消息处理总量:2条
+2020-09-08 at 14:28:58 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1421, in relation_path_add
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=relativity_companyShortName,companyCode=relativity_companyCode,indirectObjName=relativity_company,transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1387, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "071a5ed128263a0596227e2345c65c1d" }
+
+2020-09-08 at 14:28:59 | ERROR | 处理报错消息内容:{'end_time': '1599026610', 'collection_name': 'sy_news_finance_eastday_raw', 'start_time': '1599026605', 'spider_name': 'caijing_eastday_caijing'}  消息处理总量:2条
+2020-09-08 at 14:30:13 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1388, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "071a5ed128263a0596227e2345c65c1d" }
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1424, in relation_path_add
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=relativity_companyShortName,companyCode=relativity_companyCode,indirectObjName=relativity_company,transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1391, in insert_mongo
+    print('onlyId dupli',onlyId)
+NameError: name 'onlyId' is not defined
+
+2020-09-08 at 14:30:13 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastday_raw', 'start_time': '1599026605', 'end_time': '1599026610', 'spider_name': 'caijing_eastday_caijing'}  消息处理总量:2条
+2020-09-08 at 14:30:47 | SUCCESS | 消息内容:{'start_time': '1599026605', 'collection_name': 'sy_news_finance_eastday_raw', 'spider_name': 'caijing_eastday_caijing', 'end_time': '1599026610'}  消息处理总量:2条
+2020-09-08 at 14:31:01 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1009, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-08 at 14:41:06 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1429, in relation_path_add
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=relativity_companyShortName,companyCode=relativity_companyCode,indirectObjName=relativity_company,transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1389, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "35f0b8376d753cd2a76d0d8d17bfe6c5" }
+
+2020-09-08 at 14:41:06 | ERROR | 处理报错消息内容:{'end_time': '1599026667', 'start_time': '1599026658', 'spider_name': 'caijing_eastmoney_ccjxw', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:14条
+2020-09-08 at 14:42:21 | SUCCESS | 消息内容:{'spider_name': 'caijing_eastmoney_ccjxw', 'start_time': '1599026658', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1599026667'}  消息处理总量:14条
+2020-09-08 at 14:42:50 | SUCCESS | 消息内容:{'spider_name': 'caijing_eastmoney_gsxw', 'start_time': '1599026682', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1599026693'}  消息处理总量:19条
+2020-09-08 at 14:42:57 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1405, in relation_path_add
+    relation_result_list = r.json()['data']
+  File "/usr/local/lib/python3.5/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2020-09-08 at 14:42:58 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_hexun_gsyw', 'start_time': '1599026704', 'collection_name': 'sy_news_finance_hexun_raw', 'end_time': '1599026705'}  消息处理总量:3条
+2020-09-08 at 14:58:14 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 942, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1404, in relation_path_add
+    print('r',r.json())
+  File "/usr/local/lib/python3.5/dist-packages/requests/models.py", line 897, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/lib/python3.5/json/__init__.py", line 319, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.5/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.5/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2020-09-08 at 14:58:15 | ERROR | 处理报错消息内容:{'end_time': '1599026705', 'collection_name': 'sy_news_finance_hexun_raw', 'spider_name': 'caijing_hexun_gsyw', 'start_time': '1599026704'}  消息处理总量:3条
+2020-09-08 at 15:12:07 | SUCCESS | 消息内容:{'end_time': '1599026705', 'collection_name': 'sy_news_finance_hexun_raw', 'start_time': '1599026704', 'spider_name': 'caijing_hexun_gsyw'}  消息处理总量:3条
+2020-09-08 at 15:12:11 | SUCCESS | 消息内容:{'end_time': '1599026698', 'collection_name': 'sy_news_finance_eccn_raw', 'start_time': '1599026698', 'spider_name': 'caijing_eccn_zxzx'}  消息处理总量:1条
+2020-09-08 at 15:12:16 | SUCCESS | 消息内容:{'end_time': '1599026705', 'collection_name': 'sy_news_finance_cs_raw', 'start_time': '1599026705', 'spider_name': 'caijing_cs_cjyw'}  消息处理总量:1条
+2020-09-08 at 15:12:19 | SUCCESS | 消息内容:{'end_time': '1599026738', 'collection_name': 'sy_news_finance_yicai_raw', 'start_time': '1599026738', 'spider_name': 'caijing_yicai_dz'}  消息处理总量:1条
+2020-09-08 at 15:12:22 | SUCCESS | 消息内容:{'end_time': '1599026739', 'collection_name': 'sy_news_finance_askci_raw', 'start_time': '1599026739', 'spider_name': 'caijing_askci_gcy'}  消息处理总量:1条
+2020-09-08 at 15:12:27 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1009, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-08 at 15:15:38 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 907, in thread_process_data
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=companyShortName,companyCode=relativity_companyCode,indirectObjName=indirectObjName,transScore=transScore,relPath='',relType='直接关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content)
+NameError: name 'relativity_companyCode' is not defined
+
+2020-09-08 at 15:15:39 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_hangye_autohome_raw', 'end_time': '1599026794', 'spider_name': 'hangye_autohome_news', 'start_time': '1599026794'}  消息处理总量:1条
+2020-09-08 at 15:17:58 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 903, in thread_process_data
+    insert_news_search(db=db1,yqid=uid,objName=company,companyShortName=companyShortName,companyCode=companyCode,indirectObjName=indirectObjName,transScore=transScore,relPath='',relType='直接关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content,isValid=1,dataStatus=1)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 568, in insert_news_search
+    dataStatus
+  File "/usr/local/lib/python3.5/dist-packages/DBUtils/SteadyDB.py", line 605, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.5/dist-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.IntegrityError: (1062, "Duplicate entry 'e62296d7da6032c398abd29fa0ac273d-重庆长安汽车股份有限' for key 'yqid+companyName+eventCode+indirectObjName'")
+
+2020-09-08 at 15:17:59 | ERROR | 处理报错消息内容:{'end_time': '1599026794', 'start_time': '1599026794', 'collection_name': 'sy_news_hangye_autohome_raw', 'spider_name': 'hangye_autohome_news'}  消息处理总量:1条
+2020-09-08 at 15:19:45 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1010, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-08 at 15:20:11 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 943, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1430, in relation_path_add
+    insert_mongo(db_name=db_name,yqid=uid,objName=relativity_company,companyShortName=relativity_companyShortName,companyCode=relativity_companyCode,indirectObjName=relativity_company,transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1389, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "d8294addee083caeb6ef2a18d306e9c4" }
+
+2020-09-08 at 15:20:12 | ERROR | 处理报错消息内容:{'spider_name': 'hangye_autohome_news', 'collection_name': 'sy_news_hangye_autohome_raw', 'start_time': '1599026794', 'end_time': '1599026794'}  消息处理总量:1条
+2020-09-08 at 15:21:59 | SUCCESS | 消息内容:{'start_time': '1599026794', 'collection_name': 'sy_news_hangye_autohome_raw', 'spider_name': 'hangye_autohome_news', 'end_time': '1599026794'}  消息处理总量:1条
+2020-09-08 at 15:22:10 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-08 at 15:23:34 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 910, in thread_process_data
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=companyShortName,companyCode=companyCode,indirectObjName=indirectObjName,transScore=transScore,relPath='',relType='直接关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1389, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "c1b28553fe993c3096c4890090cacd79" }
+
+2020-09-08 at 15:23:34 | ERROR | 处理报错消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1599026786', 'spider_name': 'caijing_eastmoney_ganggu', 'start_time': '1599026785'}  消息处理总量:3条
+2020-09-08 at 16:01:52 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 910, in thread_process_data
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=companyShortName,companyCode=companyCode,indirectObjName=indirectObjName,transScore=transScore,relPath='',relType='直接关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1394, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "c1b28553fe993c3096c4890090cacd79" }
+
+2020-09-08 at 16:01:53 | ERROR | 处理报错消息内容:{'end_time': '1599026786', 'start_time': '1599026785', 'collection_name': 'sy_news_finance_eastmoney_raw', 'spider_name': 'caijing_eastmoney_ganggu'}  消息处理总量:3条
+2020-09-08 at 16:02:44 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 910, in thread_process_data
+    insert_mongo(db_name=db_name,yqid=uid,objName=company,companyShortName=companyShortName,companyCode=companyCode,indirectObjName=indirectObjName,transScore=transScore,relPath='',relType='直接关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1395, in insert_mongo
+    'dataStatus' : 1
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 3161, in insert
+    check_keys, manipulate, write_concern)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 607, in _insert
+    bypass_doc_val, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 595, in _insert_one
+    acknowledged, _insert_command, session)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1248, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/mongo_client.py", line 1201, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/collection.py", line 592, in _insert_command
+    _check_write_command_response(result)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "/usr/local/lib/python3.5/dist-packages/pymongo/helpers.py", line 198, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: sy_project_raw.dwa_me_yq_search index: onlyId_1 dup key: { : "c1b28553fe993c3096c4890090cacd79" }
+
+2020-09-08 at 16:02:45 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_eastmoney_ganggu', 'start_time': '1599026785', 'end_time': '1599026786', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:3条
+2020-09-08 at 16:09:15 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1599026786', 'spider_name': 'caijing_eastmoney_ganggu', 'start_time': '1599026785'}  消息处理总量:3条
+2020-09-08 at 16:09:26 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1599026783', 'spider_name': 'caijing_eastmoney_jigou_all', 'start_time': '1599026742'}  消息处理总量:3条
+2020-09-08 at 16:09:50 | SUCCESS | 消息内容:{'end_time': '1599026816', 'spider_name': 'caijing_huxiu_zixun', 'collection_name': 'sy_news_finance_huxiu_raw', 'start_time': '1599026812'}  消息处理总量:3条
+2020-09-08 at 16:10:04 | SUCCESS | 消息内容:{'end_time': '1599026861', 'spider_name': 'caijing_qianlong_jingji', 'collection_name': 'sy_news_finance_qianlong_raw', 'start_time': '1599026853'}  消息处理总量:5条
+2020-09-08 at 16:10:20 | SUCCESS | 消息内容:{'end_time': '1599026865', 'spider_name': 'caijing_sina_chanjing', 'collection_name': 'sy_news_finance_sina_raw', 'start_time': '1599026863'}  消息处理总量:4条
+2020-09-08 at 16:10:23 | SUCCESS | 消息内容:{'collection_name': 'sy_news_finance_591hx_raw', 'end_time': '1599026726', 'spider_name': 'caijing_591hx_stock_all', 'start_time': '1599026726'}  消息处理总量:1条
+2020-09-08 at 16:10:41 | SUCCESS | 消息内容:{'end_time': '1599026871', 'spider_name': 'caijing_eastmoney_hk_all', 'collection_name': 'sy_news_finance_eastmoney_raw', 'start_time': '1599026864'}  消息处理总量:7条
+2020-09-08 at 16:10:41 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+
+2020-09-08 at 17:17:58 | SUCCESS | 消息内容:{'end_time': '1599026815', 'start_time': '1599026815', 'collection_name': 'sy_news_finance_10jqka_raw', 'spider_name': 'caijing_10jqka_cjyw'}  消息处理总量:0条
+2020-09-08 at 17:18:09 | SUCCESS | 消息内容:{'end_time': '1599026883', 'start_time': '1599026883', 'collection_name': 'sy_news_finance_hexun_raw', 'spider_name': 'caijing_hexun_hongguan'}  消息处理总量:2条
+2020-09-08 at 17:18:13 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1443, in relation_path_add
+    redis_conn().hset('relation_company_path', (relativity_company,relativity_score,relPath))
+TypeError: hset() missing 1 required positional argument: 'value'
+
+2020-09-08 at 17:18:14 | ERROR | 处理报错消息内容:{'end_time': '1599026866', 'start_time': '1599026863', 'collection_name': 'sy_news_finance_iyiou_raw', 'spider_name': 'caijing_iyiou_kuaixun'}  消息处理总量:4条
+2020-09-08 at 17:19:02 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1443, in relation_path_add
+    redis_conn().hset('relation_company_path', company, (relativity_company,relativity_score,relPath))
+  File "/usr/local/lib/python3.5/dist-packages/redis/client.py", line 2674, in hset
+    return self.execute_command('HSET', name, key, value)
+  File "/usr/local/lib/python3.5/dist-packages/redis/client.py", line 774, in execute_command
+    connection.send_command(*args)
+  File "/usr/local/lib/python3.5/dist-packages/redis/connection.py", line 620, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "/usr/local/lib/python3.5/dist-packages/redis/connection.py", line 663, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "/usr/local/lib/python3.5/dist-packages/redis/connection.py", line 125, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'tuple'. Convert to a byte, string or number first.
+
+2020-09-08 at 17:19:04 | ERROR | 处理报错消息内容:{'end_time': '1599026866', 'collection_name': 'sy_news_finance_iyiou_raw', 'start_time': '1599026863', 'spider_name': 'caijing_iyiou_kuaixun'}  消息处理总量:4条
+2020-09-08 at 17:21:24 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 944, in thread_process_data
+    relation_path_add(db1=db1,db_name=db_name,relativity_company=relativity_company,uid=uid,ctimeDate=ctimeDate,emoLabel=emoLabel,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,quancheng_list=quancheng_list,jiancheng_list=jiancheng_list,code_list=code_list,relativity=relativity,relLabel=relLabel,eventCode=eventCode,eventName=eventName,emoScore=emoScore,emoConf=emoConf,importanceDgree=importanceDgree,importanceLabel=importanceLabel,ctime=ctime,title=title,summary=summary,keyword=keyword,url=url,srcType='新闻',source=source,content=search_content)
+  File "/database/dwd_news_yq/bin/process_helper.py", line 1443, in relation_path_add
+    redis_conn().hset('relation_company_path', company, ','.join(relativity_company,relativity_score,relPath))
+TypeError: join() takes exactly one argument (3 given)
+
+2020-09-08 at 17:21:24 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_iyiou_kuaixun', 'end_time': '1599026866', 'collection_name': 'sy_news_finance_iyiou_raw', 'start_time': '1599026863'}  消息处理总量:4条
+2020-09-08 at 17:21:59 | SUCCESS | 消息内容:{'spider_name': 'caijing_iyiou_kuaixun', 'start_time': '1599026863', 'collection_name': 'sy_news_finance_iyiou_raw', 'end_time': '1599026866'}  消息处理总量:4条
+2020-09-08 at 17:22:23 | SUCCESS | 消息内容:{'spider_name': 'caijing_cnfol_gegu', 'start_time': '1599026902', 'collection_name': 'sy_news_finance_cnfol_raw', 'end_time': '1599026912'}  消息处理总量:12条
+2020-09-08 at 17:22:26 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 1011, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+

@@ -1,0 +1,2 @@
+2020-09-03 at 11:00:19 | SUCCESS | 消息内容:{'end_time': '1599026626', 'collection_name': 'sy_news_finance_jrj_raw', 'spider_name': 'caijing_jrj_xsb', 'start_time': '1599026626'}  消息处理总量:0条
+2020-09-03 at 11:09:17 | SUCCESS | 消息内容:{'spider_name': 'caijing_chinaventure_sysd', 'end_time': '1599026613', 'collection_name': 'sy_news_finance_chinaventure_raw', 'start_time': '1599026613'}  消息处理总量:1条

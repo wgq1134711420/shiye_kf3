@@ -1,0 +1,25 @@
+2020-09-02 at 17:33:34 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 949, in thread_process_data
+    insert_news_search(db=db1,yqid=uid,objName=company,companyShortName=relativity_companyShortName.replace('(','（').replace(')','）'),companyCode=relativity_companyCode,indirectObjName=relativity_company.replace('(','（').replace(')','）'),transScore=relativity_score,relPath=relPath,relType='传导关联',relScore=relativity,relLabel=relLabel,personName='',eventCode=eventCode,eventName=eventName,firstLevelCode=firstLevelCode,firstLevelName=firstLevelName,secondLevelCode=secondLevelCode,secondLevelName=secondLevelName,thirdLevelCode=thirdLevelCode,thirdLevelName=thirdLevelName,fourthLevelCode=fourthLevelCode,fourthLevelName=fourthLevelName,emoLabel=emoLabel,emoScore=emoScore,emoConf=emoConf,impScore=importanceDgree,impLabel=importanceLabel,pubTime=ctime,title=title,summary=summary,keyword=keyword,srcUrl=url,srcType='新闻',source=source,content=search_content,isValid=1,dataStatus=1)
+UnboundLocalError: local variable 'relativity_companyShortName' referenced before assignment
+
+2020-09-02 at 17:33:36 | ERROR | 处理报错消息内容:{'end_time': '1599026532', 'start_time': '1599026528', 'spider_name': 'caijing_eastmoney_cgnjj', 'collection_name': 'sy_news_finance_eastmoney_raw'}  消息处理总量:10条
+2020-09-02 at 17:34:15 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 928, in thread_process_data
+    relativity_value = str(round(relativity_value,2))
+TypeError: type str doesn't define __round__ method
+
+2020-09-02 at 17:34:16 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_eastmoney_cgnjj', 'start_time': '1599026528', 'collection_name': 'sy_news_finance_eastmoney_raw', 'end_time': '1599026532'}  消息处理总量:10条
+2020-09-02 at 17:36:06 | ERROR | Traceback (most recent call last):
+  File "/database/dwd_news_yq/bin/process_data.py", line 926, in thread_process_data
+    if relativity_company != '':
+UnboundLocalError: local variable 'relativity_company' referenced before assignment
+
+2020-09-02 at 17:36:07 | ERROR | 处理报错消息内容:{'spider_name': 'caijing_dcement_zixun', 'end_time': '1599026588', 'start_time': '1599026588', 'collection_name': 'sy_news_finance_dcement_raw'}  消息处理总量:1条
+2020-09-02 at 17:38:07 | ERROR | Traceback (most recent call last):
+  File "consumer.py", line 26, in callback
+    return Processing(msg).process_data(channel, method)
+  File "/database/dwd_news_yq/bin/process_data.py", line 993, in process_data
+    time.sleep(1)
+KeyboardInterrupt
+

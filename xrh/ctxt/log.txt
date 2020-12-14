@@ -1,0 +1,302 @@
+nohup: ignoring input
+['80153032', '80153342', '80153375', '80153949', '80154015', '80154098', '80154107', '80154151', '80154282', '80154367'] 534
+300130
+插入表sy_ctxt_main_assess_value_ten数据成功
+1 80153032
+002494
+插入表sy_ctxt_main_assess_value_ten数据成功
+2 80153342
+300401
+插入表sy_ctxt_main_assess_value_ten数据成功
+3 80153375
+601016
+插入表sy_ctxt_main_assess_value_ten数据成功
+4 80153949
+300136
+插入表sy_ctxt_main_assess_value_ten数据成功
+5 80154015
+601339
+插入表sy_ctxt_main_assess_value_ten数据成功
+6 80154098
+002567
+插入表sy_ctxt_main_assess_value_ten数据成功
+7 80154107
+603609
+插入表sy_ctxt_main_assess_value_ten数据成功
+8 80154151
+603123
+插入表sy_ctxt_main_assess_value_ten数据成功
+9 80154282
+002697
+插入表sy_ctxt_main_assess_value_ten数据成功
+10 80154367
+601928
+插入表sy_ctxt_main_assess_value_ten数据成功
+11 80154375
+002501
+插入表sy_ctxt_main_assess_value_ten数据成功
+12 80154432
+002499
+插入表sy_ctxt_main_assess_value_ten数据成功
+13 80154433
+002502
+插入表sy_ctxt_main_assess_value_ten数据成功
+14 80154823
+300141
+插入表sy_ctxt_main_assess_value_ten数据成功
+15 80154891
+300164
+插入表sy_ctxt_main_assess_value_ten数据成功
+16 80155051
+002505
+插入表sy_ctxt_main_assess_value_ten数据成功
+17 80155109
+002511
+插入表sy_ctxt_main_assess_value_ten数据成功
+18 80155110
+002554
+插入表sy_ctxt_main_assess_value_ten数据成功
+19 80155180
+002508
+插入表sy_ctxt_main_assess_value_ten数据成功
+20 80155181
+002738
+插入表sy_ctxt_main_assess_value_ten数据成功
+21 80155182
+300154
+插入表sy_ctxt_main_assess_value_ten数据成功
+22 80155183
+300331
+插入表sy_ctxt_main_assess_value_ten数据成功
+23 80155184
+002503
+插入表sy_ctxt_main_assess_value_ten数据成功
+24 80156499
+002509
+插入表sy_ctxt_main_assess_value_ten数据成功
+25 80156500
+300325
+插入表sy_ctxt_main_assess_value_ten数据成功
+26 80156737
+300143
+插入表sy_ctxt_main_assess_value_ten数据成功
+27 80156738
+300144
+插入表sy_ctxt_main_assess_value_ten数据成功
+28 80156739
+002514
+插入表sy_ctxt_main_assess_value_ten数据成功
+29 80157315
+002507
+插入表sy_ctxt_main_assess_value_ten数据成功
+30 80157316
+002513
+插入表sy_ctxt_main_assess_value_ten数据成功
+31 80157317
+601567
+插入表sy_ctxt_main_assess_value_ten数据成功
+32 80157517
+002515
+插入表sy_ctxt_main_assess_value_ten数据成功
+33 80157663
+300289
+插入表sy_ctxt_main_assess_value_ten数据成功
+34 80157703
+002512
+插入表sy_ctxt_main_assess_value_ten数据成功
+35 80157795
+300145
+插入表sy_ctxt_main_assess_value_ten数据成功
+36 80157796
+300148
+插入表sy_ctxt_main_assess_value_ten数据成功
+37 80157797
+300158
+插入表sy_ctxt_main_assess_value_ten数据成功
+38 80158028
+002516
+插入表sy_ctxt_main_assess_value_ten数据成功
+39 80158029
+002517
+插入表sy_ctxt_main_assess_value_ten数据成功
+40 80158030
+300168
+插入表sy_ctxt_main_assess_value_ten数据成功
+41 80158031
+603167
+插入表sy_ctxt_main_assess_value_ten数据成功
+42 80158478
+002519
+插入表sy_ctxt_main_assess_value_ten数据成功
+43 80158479
+300157
+插入表sy_ctxt_main_assess_value_ten数据成功
+44 80158552
+002522
+插入表sy_ctxt_main_assess_value_ten数据成功
+45 80158713
+603558
+插入表sy_ctxt_main_assess_value_ten数据成功
+46 80158744
+300146
+插入表sy_ctxt_main_assess_value_ten数据成功
+47 80158866
+002547
+插入表sy_ctxt_main_assess_value_ten数据成功
+48 80159289
+300151
+插入表sy_ctxt_main_assess_value_ten数据成功
+49 80159458
+300155
+插入表sy_ctxt_main_assess_value_ten数据成功
+50 80159459
+002606
+插入表sy_ctxt_main_assess_value_ten数据成功
+51 80159460
+002524
+插入表sy_ctxt_main_assess_value_ten数据成功
+52 80159461
+002528
+插入表sy_ctxt_main_assess_value_ten数据成功
+53 80159462
+300153
+插入表sy_ctxt_main_assess_value_ten数据成功
+54 80159906
+300147
+插入表sy_ctxt_main_assess_value_ten数据成功
+55 80159907
+002526
+插入表sy_ctxt_main_assess_value_ten数据成功
+56 80160115
+002532
+插入表sy_ctxt_main_assess_value_ten数据成功
+57 80160116
+002531
+插入表sy_ctxt_main_assess_value_ten数据成功
+58 80160290
+002540
+插入表sy_ctxt_main_assess_value_ten数据成功
+59 80160476
+300169
+插入表sy_ctxt_main_assess_value_ten数据成功
+60 80160477
+300162
+插入表sy_ctxt_main_assess_value_ten数据成功
+61 80160478
+300208
+插入表sy_ctxt_main_assess_value_ten数据成功
+62 80161023
+601933
+插入表sy_ctxt_main_assess_value_ten数据成功
+63 80161074
+002702
+插入表sy_ctxt_main_assess_value_ten数据成功
+64 80161075
+300223
+插入表sy_ctxt_main_assess_value_ten数据成功
+65 80161168
+300165
+插入表sy_ctxt_main_assess_value_ten数据成功
+66 80161169
+300191
+插入表sy_ctxt_main_assess_value_ten数据成功
+67 80161170
+300159
+插入表sy_ctxt_main_assess_value_ten数据成功
+68 80161171
+002535
+插入表sy_ctxt_main_assess_value_ten数据成功
+69 80161172
+002609
+插入表sy_ctxt_main_assess_value_ten数据成功
+70 80161173
+300160
+插入表sy_ctxt_main_assess_value_ten数据成功
+71 80161230
+300163
+插入表sy_ctxt_main_assess_value_ten数据成功
+72 80161231
+002557
+插入表sy_ctxt_main_assess_value_ten数据成功
+73 80161232
+002536
+插入表sy_ctxt_main_assess_value_ten数据成功
+74 80161233
+002533
+插入表sy_ctxt_main_assess_value_ten数据成功
+75 80163362
+601890
+插入表sy_ctxt_main_assess_value_ten数据成功
+76 80163363
+002539
+插入表sy_ctxt_main_assess_value_ten数据成功
+77 80163364
+300170
+插入表sy_ctxt_main_assess_value_ten数据成功
+78 80164921
+300166
+插入表sy_ctxt_main_assess_value_ten数据成功
+79 80164923
+300174
+插入表sy_ctxt_main_assess_value_ten数据成功
+80 80164924
+002537
+插入表sy_ctxt_main_assess_value_ten数据成功
+81 80164925
+300172
+插入表sy_ctxt_main_assess_value_ten数据成功
+82 80165004
+300175
+插入表sy_ctxt_main_assess_value_ten数据成功
+83 80165005
+300194
+插入表sy_ctxt_main_assess_value_ten数据成功
+84 80165006
+002545
+插入表sy_ctxt_main_assess_value_ten数据成功
+85 80165166
+002541
+插入表sy_ctxt_main_assess_value_ten数据成功
+86 80165581
+300177
+插入表sy_ctxt_main_assess_value_ten数据成功
+87 80165766
+300178
+插入表sy_ctxt_main_assess_value_ten数据成功
+88 80165767
+300176
+插入表sy_ctxt_main_assess_value_ten数据成功
+89 80165768
+002551
+插入表sy_ctxt_main_assess_value_ten数据成功
+90 80165769
+002542
+插入表sy_ctxt_main_assess_value_ten数据成功
+91 80165949
+601700
+插入表sy_ctxt_main_assess_value_ten数据成功
+92 80166260
+601137
+插入表sy_ctxt_main_assess_value_ten数据成功
+93 80166261
+300193
+插入表sy_ctxt_main_assess_value_ten数据成功
+94 80166375
+300216
+插入表sy_ctxt_main_assess_value_ten数据成功
+95 80166376
+300183
+插入表sy_ctxt_main_assess_value_ten数据成功
+96 80166377
+300197
+插入表sy_ctxt_main_assess_value_ten数据成功
+97 80166378
+002552
+插入表sy_ctxt_main_assess_value_ten数据成功
+98 80166380
+002543
+插入表sy_ctxt_main_assess_value_ten数据成功
+99 80166381
+002546
+插入表sy_ctxt_main_assess_value_ten数据成功
+100 80166519
